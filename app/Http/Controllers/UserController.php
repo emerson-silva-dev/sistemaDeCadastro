@@ -36,7 +36,7 @@ class UserController extends Controller {
 			return "Página não existe";
 		}
 
-		$types = Type::all();
+		$types = Type::all()->where('active', 1);
 		return view('users.form_users')->with('types', $types);
 	}
 

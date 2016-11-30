@@ -42,8 +42,8 @@
 					@endif
 					<td>
 						<a href="users/visualizar/{{$user->id}}" class="btn btn-mini btn-success"> View </a>
-						<a href="users/edit_user/{{$user->id}}" class="btn btn-mini btn-primary"> Editar </a>
 						@if($user->active == 1)
+							<a href="users/edit_user/{{$user->id}}" class="btn btn-mini btn-primary"> Editar </a>
 							<a href="users/delete_user/{{$user->id}}" class="btn btn-mini btn-danger"> Excluir </a>
 						@endif
 					</td>
